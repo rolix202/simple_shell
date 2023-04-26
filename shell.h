@@ -57,17 +57,17 @@ typedef struct liststr
  * @argv:an array of strings generated from arguments
  * @path: a string path for the current command line 
  * @argc: the argument count list
- * @line_count: the error count liust
- * @err_num: the error code for exit()s
+ * @line_count: the error count lists
+ * @err_num: the error code for exi
  * @linecount_flag: count the line of input
- * @fname: the program filename
+ * @fname: the program file name
  * @env: linked list local copy of environment
  * @environ: custom modified copy of environment from LL environment
  * @history: the history node buffer file 
  * @alias: the alias node buffer file 
  * @env_changed: to identify if the  environment  was changed
  * @status: the return status of the last executable command
- * @cmd_buf: address of pointer to command _buf, on the chaining
+ * @cmd_buf: address of pointer to command _buffer on the chaining
  * @cmd_buf_type: CMD_type ||, &&, ;
  * @readfd: the command  from which to read line input
  * @histcount: the history line number count
@@ -89,7 +89,7 @@ typedef struct passinfo
 	int env_changed;
 	int status;
 
-	char **cmd_buf; /* pointer to cmd ; chain buffer, for memory management */
+	char **cmd_buf; /* pointer to command ; chain buffer, for memory management */
 	int cmd_buf_type; /* CMD_type ||, &&, ; */
 	int readfd;
 	int histcount;

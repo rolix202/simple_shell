@@ -1,10 +1,10 @@
 #include "shell.h"
 
 /**
- * get_history_file - gets the history file
- * @info: parameter struct
+ * get_history_file -This function  gets the history file
+ * @info: parameter structure 
  *
- * Return: allocated string containg history file
+ * Return:Return the  allocated string containg history file
  */
 
 char *get_history_file(info_t *info)
@@ -25,10 +25,10 @@ char *get_history_file(info_t *info)
 }
 
 /**
- * write_history - creates a file, or appends to an existing file
- * @info: the parameter struct
+ * write_history - This function creates a file, or appends to an existing file
+ * @info: the parameter structure
  *
- * Return: 1 on success, else -1
+ * Return: 1 on success,  return  -1 on failure 
  */
 int write_history(info_t *info)
 {
@@ -54,10 +54,10 @@ int write_history(info_t *info)
 }
 
 /**
- * read_history - reads history from file
- * @info: the parameter struct
+ * read_history - This reads history from file
+ * @info: the parameter structure
  *
- * Return: histcount on success, 0 otherwise
+ * Return: history count on success, otherwise 0
  */
 int read_history(info_t *info)
 {
@@ -103,10 +103,10 @@ int read_history(info_t *info)
 }
 
 /**
- * build_history_list - adds entry to a history linked list
- * @info: Structure containing potential arguments. Used to maintain
- * @buf: buffer
- * @linecount: the history linecount, histcount
+ * build_history_list - This  adds entry to a history linked list
+ * @info: This Structure containing  argument is used to maintain the function
+ * @buf: buffer files 
+ * @linecount: the history line count, history count
  *
  * Return: Always 0
  */
@@ -124,10 +124,10 @@ int build_history_list(info_t *info, char *buf, int linecount)
 }
 
 /**
- * renumber_history - renumbers the history linked list after changes
- * @info: Structure containing potential arguments. Used to maintain
- *
- * Return: the new histcount
+ * renumber_history - This rearranges  the history linked list after changes
+ * @info: This Structure containing arguments ussed to maintain the file 
+ *    
+ * Return: the new history ount
  */
 int renumber_history(info_t *info)
 {

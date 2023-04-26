@@ -1,10 +1,10 @@
 #include "shell.h"
 
 /**
- * is_chain - test if current char in buffer is a chain delimeter
- * @info: the parameter struct
- * @buf: the char buffer
- * @p: address of current position in buf
+ * is_chain - To test if current character  in buffer is a chain delimeter
+ * @info: the parameter structure 
+ * @buf: the character  buffer
+ * @p: address of current position located in the  buffer
  *
  * Return: 1 if chain delimeter, 0 otherwise
  */
@@ -36,14 +36,14 @@ int is_chain(info_t *info, char *buf, size_t *p)
 }
 
 /**
- * check_chain - checks we should continue chaining based on last status
- * @info: the parameter struct
- * @buf: the char buffer
- * @p: address of current position in buf
- * @i: starting position in buf
- * @len: length of buf
+ * check_chain - This checks if the function should continue chaining based on the last status
+ * @info: the parameter structure 
+ * @buf: the character buffer
+ * @p: address of current position in buffer
+ * @i: starting position in buffer 
+ * @len: length of buffer 
  *
- * Return: Void
+ * Return:Null
  */
 void check_chain(info_t *info, char *buf, size_t *p, size_t i, size_t len)
 {
@@ -70,8 +70,8 @@ void check_chain(info_t *info, char *buf, size_t *p, size_t i, size_t len)
 }
 
 /**
- * replace_alias - replaces an aliases in the tokenized string
- * @info: the parameter struct
+ * replace_alias - This replaces an alias in the tokenized string
+ * @info: the parameter structure 
  *
  * Return: 1 if replaced, 0 otherwise
  */
@@ -99,8 +99,8 @@ int replace_alias(info_t *info)
 }
 
 /**
- * replace_vars - replaces vars in the tokenized string
- * @info: the parameter struct
+ * replace_vars - This  replaces variables  in the tokenized string
+ * @info: the parameter structure 
  *
  * Return: 1 if replaced, 0 otherwise
  */
@@ -140,9 +140,9 @@ int replace_vars(info_t *info)
 }
 
 /**
- * replace_string - replaces string
- * @old: address of old string
- * @new: new string
+ * replace_string -This  replaces string
+ * @old: address of old string replaced 
+ * @new: new string added
  *
  * Return: 1 if replaced, 0 otherwise
  */
